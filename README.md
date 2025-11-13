@@ -1,6 +1,8 @@
 # JuBox
 
-A Julia distribution for science, out of the box. This is an example repository demonstrating the bundling of a Julia distribution. A Julia distribution is defined by a `Project.toml` file which must contain `name` and `version` fields, similar to Julia packages. All listed packages and dependencies are bundled into the stdlib path, making them resistant to accidental precompilations.
+JuBox is a Julia distribution that comes with commonly needed scientific packages out of the box. Start using Makie, DifferentialEquations, or any included package immediately - no compilation wait. Additional packages can be installed via Pkg without triggering recompilation of pre-installed packages.
+
+This repository also serves as a template for creating custom Julia distributions tailored to your needs. Fork it, modify the `Project.toml` to include your preferred packages, and run the "Build Release Assets" GitHub Actions workflow to generate installers for Linux, macOS, and Windows. The distribution format uses a `Project.toml` with `name` and `version` fields - bundling all listed packages and dependencies into the stdlib path to prevent accidental recompilations.
 
 ## Installation
 
